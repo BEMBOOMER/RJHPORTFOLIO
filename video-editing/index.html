@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video/Editing — Roelof Junior Haar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .subpage { padding: 7rem clamp(1.5rem, 6vw, 5rem) 5rem; min-height: 100vh; }
+    .subpage__back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(245,244,240,0.4); margin-bottom: 3rem; transition: color 0.2s; cursor: none; }
+    .subpage__back:hover { color: var(--red); }
+    .subpage__label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+    .subpage__title { font-family: var(--font-display); font-size: clamp(3.5rem, 9vw, 9rem); line-height: 0.9; letter-spacing: 0.01em; margin-bottom: 1.5rem; }
+    .subpage__desc { max-width: 620px; color: rgba(245,244,240,0.65); line-height: 1.8; font-size: 1rem; }
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .project-grid .project-card__img--placeholder { aspect-ratio: 4/3; background: var(--mid-gray); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; border: 1px solid transparent; transition: border-color 0.3s; }
+    .project-card__link:hover .project-card__img--placeholder { border-color: var(--red); }
+  </style>
+</head>
+<body>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav__logo">RJH</a>
+    <ul class="nav__links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#werk">Werk</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="subpage">
+    <a href="../index.html" class="subpage__back">&#8592; Terug naar home</a>
+    <div class="page-showcase reveal">
+      <div class="page-showcase__copy">
+        <p class="subpage__label">03 / Video/Editing</p>
+        <h1 class="subpage__title">Video/<br>Editing.</h1>
+        <p class="subpage__desc">
+          In video/editing draait het voor mij om ritme, timing en gevoel. Soms moet een edit direct knallen, soms juist ruimte laten voor sfeer. Of het nu een eventvideo, aftermovie of social cut is, ik zoek altijd naar de versie die het moment het sterkst laat binnenkomen.
+        </p>
+      </div>
+      <div class="page-showcase__art page-showcase__art--video" aria-hidden="true">
+        <div class="video-ring video-ring--outer"></div>
+        <div class="video-ring video-ring--inner"></div>
+        <div class="video-play"></div>
+        <div class="video-strip">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card reveal">
+        <a href="classic-hits-in-concert/index.html" class="project-card__link">
+          <div class="project-card__img">
+            <img src="../assets/thumbs/classic-hits.png" alt="Classic Hits in Concert" loading="lazy" />
+            <div class="project-card__overlay"><span>Bekijk project</span></div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Classic Hits in Concert</h3>
+            <p class="project-card__tags">Video/Editing / Aftermovie / Event</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal reveal--delay-1">
+        <a href="bijstox/index.html" class="project-card__link">
+          <div class="project-card__img">
+            <img src="../assets/thumbs/bijstox.png" alt="BijStox" loading="lazy" />
+            <div class="project-card__overlay"><span>Bekijk project</span></div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">BijStox</h3>
+            <p class="project-card__tags">Video/Editing / Event / Social Video</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal reveal--delay-2">
+        <a href="wiesse-oet-zuus/index.html" class="project-card__link">
+          <div class="project-card__img">
+            <img src="../assets/thumbs/WIESSEOETZUUSLOGO.png" alt="WIESSE OET ZUUS" loading="lazy" />
+            <div class="project-card__overlay"><span>Bekijk project</span></div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">WIESSE OET ZUUS</h3>
+            <p class="project-card__tags">Video/Editing / Entertainment / Social Shorts</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">RJH</span>
+      <span class="footer__copy">&copy; 2026 Roelof Junior Haar.</span>
+      <span class="footer__back"><a href="../index.html">Terug naar home &uarr;</a></span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

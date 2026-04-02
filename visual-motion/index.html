@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Motion — Roelof Junior Haar</title>
+  <meta name="description" content="Visual Motion werk van Roelof Junior Haar. Animaties en motion graphics gemaakt met After Effects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav class="subpage-nav">
+    <a href="../index.html" class="subpage-nav__back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Terug
+    </a>
+    <a href="../index.html" class="subpage-nav__logo">RJH</a>
+    <div class="subpage-nav__breadcrumb">Werk / <span>Visual Motion</span></div>
+  </nav>
+
+  <section class="bi-hero reveal">
+    <div class="page-showcase">
+      <div class="page-showcase__copy">
+        <p class="bi-hero__label">02 / Visual Motion</p>
+        <h1 class="bi-hero__title">VISUAL<br>MOTION</h1>
+        <p class="bi-hero__desc">
+          Motion is ontwerp dat beweegt. Met After Effects bouw ik animaties die niet alleen mooi zijn om naar te kijken, maar ook iets vertellen. Van een simpele overgang tot een volledige motion graphic, beweging heeft altijd een reden.
+        </p>
+      </div>
+      <div class="page-showcase__art page-showcase__art--visual" aria-hidden="true">
+        <svg class="motion-ring" viewBox="0 0 300 300" aria-hidden="true">
+          <defs>
+            <path id="motionCircle" d="M150,150 m-96,0 a96,96 0 1,1 192,0 a96,96 0 1,1 -192,0" />
+          </defs>
+          <circle cx="150" cy="150" r="76" class="motion-ring__core" />
+          <text class="motion-ring__text">
+            <textPath href="#motionCircle">VISUAL MOTION • VISUAL MOTION • VISUAL MOTION • VISUAL MOTION • </textPath>
+          </text>
+        </svg>
+        <div class="motion-orb motion-orb--one"></div>
+        <div class="motion-orb motion-orb--two"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bi-projects">
+    <p class="bi-projects__label reveal">Projecten</p>
+
+    <div class="project-grid">
+      <article class="project-card reveal">
+        <a href="zet-m-op-motion-ad/index.html" class="project-card__link">
+          <div class="project-card__img">
+            <img src="https://img.youtube.com/vi/uVYbQeUzlmc/hqdefault.jpg" alt="ZET 'M OP! Motion Ad" loading="lazy" />
+            <div class="project-card__overlay"><span>Bekijk project</span></div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">ZET 'M OP! Motion Ad</h3>
+            <p class="project-card__tags">Visual Motion / Social Ad / Motion Design</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal reveal--delay-1">
+        <a href="still-into-you-cyril/index.html" class="project-card__link">
+          <div class="project-card__img">
+            <img src="https://img.youtube.com/vi/sFfV53SDnO8/hqdefault.jpg" alt="Still Into You - CYRIL" loading="lazy" />
+            <div class="project-card__overlay"><span>Bekijk project</span></div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Still Into You - CYRIL</h3>
+            <p class="project-card__tags">Visual Motion / Music / Motion Art</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal reveal--delay-2">
+        <a href="zet-m-op-verhaal-promo/index.html" class="project-card__link">
+          <div class="project-card__img">
+            <img src="https://img.youtube.com/vi/01VaQcJCgVg/hqdefault.jpg" alt="ZET 'M OP! Verhaal Promo" loading="lazy" />
+            <div class="project-card__overlay"><span>Bekijk project</span></div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">ZET 'M OP! Verhaal Promo</h3>
+            <p class="project-card__tags">Visual Motion / Story Promo / Graphics</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">RJH</span>
+      <span class="footer__copy">&copy; 2026 Roelof Junior Haar.</span>
+      <span class="footer__back"><a href="../index.html">Terug naar home &uarr;</a></span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

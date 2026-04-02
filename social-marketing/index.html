@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Marketing — Roelof Junior Haar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .subpage { padding: 7rem clamp(1.5rem, 6vw, 5rem) 5rem; min-height: 100vh; }
+    .subpage__back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(245,244,240,0.4); margin-bottom: 3rem; transition: color 0.2s; cursor: none; }
+    .subpage__back:hover { color: var(--red); }
+    .subpage__label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+    .subpage__title { font-family: var(--font-display); font-size: clamp(3.5rem, 9vw, 9rem); line-height: 0.9; letter-spacing: 0.01em; margin-bottom: 1.5rem; }
+    .subpage__desc { max-width: 620px; color: rgba(245,244,240,0.65); line-height: 1.8; font-size: 1rem; }
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .project-grid .project-card__img--placeholder { aspect-ratio: 4/3; background: var(--mid-gray); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; border: 1px solid transparent; transition: border-color 0.3s; }
+    .project-card__link:hover .project-card__img--placeholder { border-color: var(--red); }
+  </style>
+</head>
+<body>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav__logo">RJH</a>
+    <ul class="nav__links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#werk">Werk</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="subpage">
+    <a href="../index.html" class="subpage__back">&#8592; Terug naar home</a>
+    <div class="page-showcase reveal">
+      <div class="page-showcase__copy">
+        <p class="subpage__label">04 / Social Marketing</p>
+        <h1 class="subpage__title">Social<br>Marketing.</h1>
+        <p class="subpage__desc">
+          Social marketing moet snel binnenkomen, maar ook iets achterlaten. Ik maak content die direct aandacht pakt zonder leeg te voelen: herkenbare branding, slimme montage en formats die werken op het tempo van socials, maar wel menselijk en helder blijven.
+        </p>
+      </div>
+      <div class="page-showcase__art page-showcase__art--social" aria-hidden="true">
+        <div class="social-pill social-pill--one">Brand Reach</div>
+        <div class="social-pill social-pill--two">Short-form Content</div>
+        <div class="social-pill social-pill--three">Campaign Flow</div>
+        <div class="social-orb social-orb--one"></div>
+        <div class="social-orb social-orb--two"></div>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card reveal">
+        <a href="contentbrein/index.html" class="project-card__link">
+          <div class="project-card__img">
+            <img src="../assets/thumbs/contentbrein.jpg" alt="Contentbrein" loading="lazy" />
+            <div class="project-card__overlay"><span>Bekijk project</span></div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Contentbrein</h3>
+            <p class="project-card__tags">Social Ads / Video / Campagne</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card reveal reveal--delay-1">
+        <a href="zet-m-op/index.html" class="project-card__link">
+          <div class="project-card__img">
+            <img src="../assets/thumbs/zet-m-op.jpg" alt="ZET 'M OP!'" loading="lazy" />
+            <div class="project-card__overlay"><span>Bekijk project</span></div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">ZET 'M OP!</h3>
+            <p class="project-card__tags">Social Marketing / Promo / Shorts</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">RJH</span>
+      <span class="footer__copy">&copy; 2026 Roelof Junior Haar.</span>
+      <span class="footer__back"><a href="../index.html">Terug naar home &uarr;</a></span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>WIESSE OET ZUUS — Video/Editing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    .subpage { padding: 7rem clamp(1.5rem, 6vw, 5rem) 5rem; min-height: 100vh; }
+    .subpage__back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(245,244,240,0.4); margin-bottom: 3rem; transition: color 0.2s; cursor: none; }
+    .subpage__back:hover { color: var(--red); }
+    .subpage__label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+    .subpage__title { font-family: var(--font-display); font-size: clamp(3rem, 8vw, 8rem); line-height: 0.9; letter-spacing: 0.01em; margin-bottom: 1.5rem; }
+    .subpage__desc { max-width: 620px; color: rgba(245,244,240,0.65); line-height: 1.8; font-size: 1rem; margin-bottom: 4rem; }
+    .videos-stack { display: flex; flex-direction: column; gap: clamp(3rem, 6vw, 5rem); max-width: 460px; }
+    .video-block { display: flex; flex-direction: column; gap: 1rem; }
+    .video-block__embed { position: relative; aspect-ratio: 9/16; width: 100%; background: #111; overflow: hidden; }
+    .video-block__embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+    .video-block__info { padding: 0 0.1rem; }
+    .video-block__title { font-family: var(--font-display); font-size: clamp(1.4rem, 2.5vw, 2rem); letter-spacing: 0.05em; color: var(--off-white); margin-bottom: 0.4rem; }
+    .video-block__desc { font-size: 0.85rem; color: rgba(245,244,240,0.45); line-height: 1.7; max-width: 420px; }
+  </style>
+</head>
+<body>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav class="nav" id="nav">
+    <a href="../../index.html" class="nav__logo">RJH</a>
+    <ul class="nav__links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../index.html#werk">Werk</a></li>
+      <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="subpage">
+    <a href="../index.html" class="subpage__back">&#8592; Terug naar Video/Editing</a>
+    <p class="subpage__label">Video/Editing / WIESSE OET ZUUS</p>
+    <h1 class="subpage__title">WIESSE OET<br>ZUUS.</h1>
+    <p class="subpage__desc">
+      Tien korte edits voor WIESSE OET ZUUS, gemaakt voor socials. De focus ligt op energie, herkenbaarheid en timing: compact, duidelijk en meteen raak in de eerste seconden.
+    </p>
+
+    <div class="videos-stack">
+      <div class="video-block reveal">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/4_NSCKHRGMo"
+            title="WIESSE OET ZUUS short 01"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 01</h3>
+          <p class="video-block__desc">Een korte social edit die meteen met energie opent en de sfeer van het project direct neerzet.</p>
+        </div>
+      </div>
+
+      <div class="video-block reveal reveal--delay-1">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/VhM5MJ915po"
+            title="WIESSE OET ZUUS short 02"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 02</h3>
+          <p class="video-block__desc">Gebouwd op ritme en presence, met een edit die snel kijkt maar toch karakter behoudt.</p>
+        </div>
+      </div>
+
+      <div class="video-block reveal reveal--delay-2">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/7MwYYLLAoLg"
+            title="WIESSE OET ZUUS short 03"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 03</h3>
+          <p class="video-block__desc">Een compacte cut voor socials waarin tempo, gevoel en herkenbaarheid samenkomen in een strakke eindvorm.</p>
+        </div>
+      </div>
+
+      <div class="video-block reveal">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/FC4gPqepKBE"
+            title="WIESSE OET ZUUS short 04"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 04</h3>
+          <p class="video-block__desc">Een snelle vertical edit met directe energy en een opbouw die goed werkt voor social bereik.</p>
+        </div>
+      </div>
+
+      <div class="video-block reveal reveal--delay-1">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/SuUFcj_3i9c"
+            title="WIESSE OET ZUUS short 05"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 05</h3>
+          <p class="video-block__desc">Compact gemonteerd voor tempo en herkenbaarheid, met een strakke hook in de eerste seconden.</p>
+        </div>
+      </div>
+
+      <div class="video-block reveal reveal--delay-2">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/Okp8oF0hgOs"
+            title="WIESSE OET ZUUS short 06"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 06</h3>
+          <p class="video-block__desc">Een edit die draait om presence en timing, zodat het beeld meteen blijft hangen tijdens het scrollen.</p>
+        </div>
+      </div>
+
+      <div class="video-block reveal">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/cP837zSjyTU"
+            title="WIESSE OET ZUUS short 07"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 07</h3>
+          <p class="video-block__desc">Social-first montage met een snelle flow en duidelijke beeldkeuzes die direct aandacht trekken.</p>
+        </div>
+      </div>
+
+      <div class="video-block reveal reveal--delay-1">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/3wHNcveu7UI"
+            title="WIESSE OET ZUUS short 08"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 08</h3>
+          <p class="video-block__desc">Een korte cut waarin ritme en sfeer samenkomen, gemaakt om snel te landen zonder rommelig te voelen.</p>
+        </div>
+      </div>
+
+      <div class="video-block reveal reveal--delay-2">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/B3oQi0kwazE"
+            title="WIESSE OET ZUUS short 09"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 09</h3>
+          <p class="video-block__desc">Afgesloten met een korte, energieke social edit die de stijl van het project sterk en herkenbaar vasthoudt.</p>
+        </div>
+      </div>
+
+      <div class="video-block reveal">
+        <div class="video-block__embed">
+          <iframe
+            src="https://www.youtube.com/embed/TF0Sb4JXAGA"
+            title="WIESSE OET ZUUS short 10"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-block__info">
+          <h3 class="video-block__title">Short 10</h3>
+          <p class="video-block__desc">Een extra social cut die de reeks compleet maakt met dezelfde snelle energie en duidelijke, herkenbare montage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">RJH</span>
+      <span class="footer__copy">&copy; 2026 Roelof Junior Haar.</span>
+      <span class="footer__back"><a href="../../index.html">Terug naar home &uarr;</a></span>
+    </div>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
